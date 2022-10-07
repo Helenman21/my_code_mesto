@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Жак Ив Кусто</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="conteyner">
+			<template id="block-card__item-clone">
+				<div class="block-card__item">
+					<div class="description">
+					<div class="block-card__img">
+						<img class="block-card__photo-city" src="" alt="Фотография Карачаевск">
+						<img class="block-card__delete-photo" src="src/img/Close Icon.png" alt="Картинка крестик">
+					</div>
+					<div class="block-card__name-city">
+						<div class="block-card__city"></div>
+						<span class="block-card__heart white-heart"></span>
+					</div>
+				</div>
+				</div>
+			</template>
+
+			<div class="block-location">
+				<div class="block-location__mesto">
+					<img class="block-location__img-logo" src="/src/img/logo.svg" alt="Логотип">
+				</div>
+				<hr>
+			</div>
+			<div class="block-avatar">
+				<div class="block-avatar__img-avatar">
+					<img class="block-avatar__img" src="/src/img/image.jpg" alt="">
+				</div>
+				<div class="block-avatar__framebusiness-card">
+					<div class="block-avatar__full-name">Жак-Ив Кусто
+					</div>
+
+					<div class="block-avatar__profession">Исследователь океана</div>
+				</div>
+				<div class="block-avatar__pen-frame">
+					<img src="/src/img/Edit Button.png" alt="Картинка рамка c плюсиком">
+				</div>
+				<div class="block-avatar__add-card">
+					<img class="block-avatar__add-button" src="/src/img/Add Button.png" alt="Картинка рамка">
+				</div>
+			</div>
+			<div class="block-card">
+				<div class="block-card__row">
+				</div>
+			</div>
+			<footer class="block-footer">
+				<span class="block-footer__mesto"> © 2020 Mesto Russia</span>
+			</footer>
+		</div>
+		<div class="popup-profile popup">
+			<div class="popup-profile__conteiner">
+				<div class="popup__body">
+					<div class="popup-profile__profile">
+						<div class="popup-profile__title">Редактировать профиль</div>
+						<form action="#" class="popup-profile__form" >
+							<div class="popup-profile__full-name">
+								<input class="popup-profile__input-full-name" type="text" placeholder="Ваше имя" required minlength="2" maxlength="30">
+							</div>
+							<hr>
+							<div class="popup-profile__profession">
+								<input class="popup-profile__input-profession" type="text" placeholder="Ваша профессия" required minlength="2" maxlength="30">
+							</div>
+							<hr>
+							<button class="popup-profile__button">Сохранить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<img class="popup-profile__closed" src="/src/img/Close Icon.png" alt="Крестик">
+		</div>
+		<div class="popup-add-card popup">
+			<div class="popup-add-card__conteiner">
+				<div class="popup-add-card__body">
+					<div class="popup-add-card__new">
+						<div class="popup-add-card__title">Добавить карточку</div>
+						<form action="#" class="popup-add-card__form">
+							<div class="popup-add-card__img">
+								<input class="popup-add-card__input-photo" type="text" placeholder="Ссылка на фото">
+							</div>
+							<hr>
+							<div class="popup-add-card__name-city">
+								<input class="popup-add-card__input-name-city" type="text" placeholder="Наименование места">
+							</div>
+							<hr>
+							<button class="popup-add-card__button">Сохранить</button>
+						</form>
+					</div>
+				</div>
+				<img class="popup-add-card__closed" src="/src/img/Close Icon.png" alt="Крестик">
+			</div>
+		</div>
+		<div class="popup-card popup">
+			<div class="popup-card__conteiner">
+				<img class="popup-card__img" src="/src/img/Close Icon.png" alt="">
+			<img class="popup-card__closed" src="/src/img/Close Icon.png" alt="Крестик">
+		</div>
+	</div>
+	<script src="./src/constants.js" type="module"></script>
+	<script src="/src/main.js" type="module"></script>
+</body>
+
+</html>
