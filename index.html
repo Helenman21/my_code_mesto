@@ -60,13 +60,13 @@
 				<div class="popup__body">
 					<div class="popup-profile__profile">
 						<div class="popup-profile__title">Редактировать профиль</div>
-						<form action="#" class="popup-profile__form" >
+						<form action="#" class="popup-profile__form" novalidate>
 							<div class="popup-profile__full-name">
-								<input class="popup-profile__input-full-name" type="text" placeholder="Ваше имя" required minlength="2" maxlength="30">
+								<input class="popup-profile__input-full-name" type="text" placeholder="Ваше имя" required minlength="2" maxlength="40" required>
 							</div>
 							<hr>
 							<div class="popup-profile__profession">
-								<input class="popup-profile__input-profession" type="text" placeholder="Ваша профессия" required minlength="2" maxlength="30">
+								<input class="popup-profile__input-profession" type="text" placeholder="Ваша профессия" required minlength="2" maxlength="200" required>
 							</div>
 							<hr>
 							<button class="popup-profile__button">Сохранить</button>
@@ -81,13 +81,13 @@
 				<div class="popup-add-card__body">
 					<div class="popup-add-card__new">
 						<div class="popup-add-card__title">Добавить карточку</div>
-						<form action="#" class="popup-add-card__form">
+						<form action="#" class="popup-add-card__form" novalidate>
 							<div class="popup-add-card__img">
-								<input class="popup-add-card__input-photo" type="text" placeholder="Ссылка на фото">
+								<input class="popup-add-card__input-photo" type="url" placeholder="Ссылка на фото" type="url" required>
 							</div>
 							<hr>
 							<div class="popup-add-card__name-city">
-								<input class="popup-add-card__input-name-city" type="text" placeholder="Наименование места">
+								<input class="popup-add-card__input-name-city" type="text" placeholder="Наименование места" minlength="2" maxlength="30" required>
 							</div>
 							<hr>
 							<button class="popup-add-card__button">Сохранить</button>
