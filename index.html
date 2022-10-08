@@ -60,16 +60,18 @@
 				<div class="popup__body">
 					<div class="popup-profile__profile">
 						<div class="popup-profile__title">Редактировать профиль</div>
-						<form action="#" class="popup-profile__form" novalidate>
+						<form action="#" class="form popup-profile__form" novalidate>
+							<fieldset class="form__set">
 							<div class="popup-profile__full-name">
-								<input class="popup-profile__input-full-name" type="text" placeholder="Ваше имя" required minlength="2" maxlength="40" required>
+								<input id="profile-name-input" class="popup-profile__input-full-name input-focus form-input" type="text" placeholder="Ваше имя" required minlength="2" maxlength="40" required>
+								<span class="profile-name-input-error" ></span>
 							</div>
-							<hr>
 							<div class="popup-profile__profession">
-								<input class="popup-profile__input-profession" type="text" placeholder="Ваша профессия" required minlength="2" maxlength="200" required>
+								<input id="profile-major-profession" class="popup-profile__input-profession input-focus form-input" type="text" placeholder="Ваша профессия" minlength="2" maxlength="200" required>
+								<span class="profile-major-profession-error" ></span>
 							</div>
-							<hr>
-							<button class="popup-profile__button">Сохранить</button>
+							<button class="popup-profile__button button-submit">Сохранить</button>
+						</fieldset>
 						</form>
 					</div>
 				</div>
@@ -81,16 +83,18 @@
 				<div class="popup-add-card__body">
 					<div class="popup-add-card__new">
 						<div class="popup-add-card__title">Добавить карточку</div>
-						<form action="#" class="popup-add-card__form" novalidate>
+						<form action="#" class="form popup-add-card__form" novalidate>
+							<fieldset class="form__set">
 							<div class="popup-add-card__img">
-								<input class="popup-add-card__input-photo" type="url" placeholder="Ссылка на фото" type="url" required>
+								<input class="popup-add-card__input-photo input-focus form-input" type="url" placeholder="Ссылка на фото" type="url" required>
+								<span class="form__input-error">Необходимо заполнить данное поле</span>
 							</div>
-							<hr>
 							<div class="popup-add-card__name-city">
-								<input class="popup-add-card__input-name-city" type="text" placeholder="Наименование места" minlength="2" maxlength="30" required>
+								<input class="popup-add-card__input-name-city input-focus form-input" type="text" placeholder="Наименование места" minlength="2" maxlength="30" required>
+								<span class="form__input-error">Необходимо заполнить данное поле</span>
 							</div>
-							<hr>
-							<button class="popup-add-card__button">Сохранить</button>
+							<button class="popup-add-card__button button-submit">Сохранить</button>
+						</fieldset>
 						</form>
 					</div>
 				</div>
@@ -104,6 +108,7 @@
 		</div>
 	</div>
 	<script src="./src/constants.js" type="module"></script>
+	<script src="./src/validate.js" type="module"></script>
 	<script src="/src/main.js" type="module"></script>
 </body>
 

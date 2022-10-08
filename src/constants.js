@@ -23,6 +23,7 @@ const buttonPopupProfile = popupProfile.querySelector('.popup-profile__button');
 const closedPopupProfile = popupProfile.querySelector('.popup-profile__closed');
 const inputChangeFullName = popupProfile.querySelector('.popup-profile__input-full-name');
 const inputChangeProfession = popupProfile.querySelector('.popup-profile__input-profession');
+const fieldSetPopupProfileForm = popupProfile.querySelector('.form__set')
 
 // попап фото
 const popupCard = document.querySelector('.popup-card');
@@ -57,5 +58,6 @@ export const UI_ELEMENTS = {
 	popupCardClose,
 	popupCardSrc,
 	popupElements, 
-	nodePrepend
+	nodePrepend, 
+	fieldSetPopupProfileForm
 }

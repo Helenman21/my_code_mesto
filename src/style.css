@@ -95,6 +95,10 @@ hr {
 	margin-bottom: 3%;
 	width: 100%;
 }
+.form-input{
+	margin-bottom: 5px;
+	border-bottom: 1px solid gray;
+}
 .block-avatar {
 	display: flex;
 	margin-bottom: 45px;
@@ -265,11 +269,24 @@ hr {
 * input {
 	padding: 5px;
 }
+.input-focus:focus{
+	/* border: 1px solid blue; */
+}
+.form__input_type_error {
+	border: 1px solid red;
+ 
+	/* Нижняя рамка становится красной всякий раз, 
+	когда введённые данные некорректны */
+ } 
 input:focus:invalid {
 	outline: none;
 }
-input:invalid {
-	box-shadow: 0 0 5px 1px red;
+
+.button_inactive{
+	background-color: red;
+}
+.form__input-error_active{
+	background-color: blue;
 }
 
 .popup-profile__body {
@@ -282,7 +299,7 @@ input:invalid {
 }
 .popup-profile__conteiner {
 	height: 330px;
-	width: 430px;
+	width: 530px;
 	border-radius: 10px;
 	background-color: white;
 }
@@ -299,8 +316,9 @@ input:invalid {
 }
 .popup-profile__full-name {
 	margin: 1px;
-	width: 358px;
+	width: 100%;
 	height: 50px;
+	margin-bottom: 35px;
 }
 .popup-profile__input-full-name {
 	width: 100%;
@@ -308,8 +326,9 @@ input:invalid {
 }
 .popup-profile__profession {
 	margin: 5px;
-	width: 358px;
+	width: 100%;
 	height: 50px;
+	margin-bottom: 35px;
 }
 .popup-profile__input-profession {
 	width: 100%;
@@ -317,7 +336,7 @@ input:invalid {
 }
 .popup-profile__button {
 	margin-top: 20px;
-	width: 358px;
+	width: 100%;
 	height: 50px;
 	background-color: #000000;
 	color: white;
