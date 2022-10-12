@@ -96,7 +96,6 @@ hr {
 	width: 100%;
 }
 .form-input{
-	margin-bottom: 5px;
 	border-bottom: 1px solid gray;
 }
 .block-avatar {
@@ -270,11 +269,10 @@ hr {
 	padding: 5px;
 }
 .input-focus:focus{
-	/* border: 1px solid blue; */
+	border: 1px solid blue;
 }
 .form__input_type_error {
-	border: 1px solid red;
- 
+	border-bottom: 1px solid red;
 	/* Нижняя рамка становится красной всякий раз, 
 	когда введённые данные некорректны */
  } 
@@ -282,13 +280,14 @@ input:focus:invalid {
 	outline: none;
 }
 
-.button_inactive{
-	background-color: red;
-}
-.form__input-error_active{
-	background-color: blue;
-}
 
+.popup__error_visible{
+	color: red;
+}
+.popup__button_disabled {
+	opacity: 0.2;
+	pointer-events: none;
+ }
 .popup-profile__body {
 	min-height: 100%;
 	display: flex;
@@ -351,7 +350,7 @@ input:focus:invalid {
 	opacity: 0.5;
 }
 .popup-add-card__conteiner {
-	height: 330px;
+	height: 340px;
 	width: 430px;
 	border-radius: 10px;
 	background-color: white;
@@ -380,6 +379,7 @@ input:focus:invalid {
 	margin: 5px;
 	width: 358px;
 	height: 50px;
+	margin-bottom: 5%;
 }
 .popup-add-card__input-photo {
 	width: 100%;
@@ -389,6 +389,7 @@ input:focus:invalid {
 	margin: 5px;
 	width: 358px;
 	height: 50px;
+	margin-bottom: 5%;
 }
 .popup-add-card__input-name-city {
 	width: 100%;
@@ -476,4 +477,7 @@ input:focus:invalid {
 	opacity: 1;
 	visibility: visible;
 	background-color: #000000;
+}
+.button_inactive{
+	background-color: rgb(151, 133, 133);
 }
