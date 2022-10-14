@@ -3,6 +3,7 @@
 <head>
 	<title>Жак Ив Кусто</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/src/style.css">
 </head>
 
@@ -63,11 +64,11 @@
 						<form action="#" class="form popup-profile__form" novalidate>
 							<fieldset class="form__set">
 							<div class="popup-profile__full-name">
-								<input id="profile-name-input" class="popup-profile__input-full-name input-focus form-input" type="text" placeholder="Ваше имя" required minlength="2" maxlength="40" required>
+								<input id="profile-name-input" class="popup-profile__input-full-name input-focus form-input input-profile" type="text" placeholder="Ваше имя" required minlength="2" maxlength="40" required>
 								<span class="profile-name-input-error" ></span>
 							</div>
 							<div class="popup-profile__profession">
-								<input id="profile-major-profession" class="popup-profile__input-profession input-focus form-input" type="text" placeholder="Ваша профессия" minlength="2" maxlength="200" required>
+								<input id="profile-major-profession" class="popup-profile__input-profession input-focus form-input input-profile" type="text" placeholder="Ваша профессия" minlength="2" maxlength="200" required>
 								<span class="profile-major-profession-error" ></span>
 							</div>
 							<button class="popup-profile__button button-submit">Сохранить</button>
@@ -84,14 +85,14 @@
 					<div class="popup-add-card__new">
 						<div class="popup-add-card__title">Добавить карточку</div>
 						<form action="#" class="form popup-add-card__form" novalidate>
-							<fieldset class="form__set">
+							<fieldset class="form__set-card">
 							<div class="popup-add-card__img">
-								<input class="popup-add-card__input-photo input-focus form-input" type="url" placeholder="Ссылка на фото" type="url" required>
-								<span class="form__input-error">Необходимо заполнить данное поле</span>
+								<input id="card-input-url" class="popup-add-card__input-photo input-focus form-input input-card" type="url" placeholder="Ссылка на фото" required>
+								<span class="card-input-url-error">здесь ошибка</span>
 							</div>
 							<div class="popup-add-card__name-city">
-								<input class="popup-add-card__input-name-city input-focus form-input" type="text" placeholder="Наименование места" minlength="2" maxlength="30" required>
-								<span class="form__input-error">Необходимо заполнить данное поле</span>
+								<input id="card-input-title" class="popup-add-card__input-name-city input-focus form-input input-card" type="text" placeholder="Наименование места" minlength="2" maxlength="30" required>
+								<span class="card-input-title-error"> и здесь тоже</span>
 							</div>
 							<button class="popup-add-card__button button-submit">Сохранить</button>
 						</fieldset>
